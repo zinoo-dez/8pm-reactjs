@@ -3,8 +3,7 @@ import { useEffect, useState } from "react"
 import { UserTypes } from "../type/type"
 import Button from "../components/Button"
 import Card from "../components/Card"
-import { Carousel } from "flowbite-react"
-import { MyCarousel } from "../components/MyCarousel"
+
 function Home() {
     // const [hello, setHello] = useState<string>("Hello World!")
     // setHello("Hello World 2!")

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { MyCarousel } from "../components/MyCarousel"
+
 
 function Post() {
     const [loading, setLoading] = useState(false)

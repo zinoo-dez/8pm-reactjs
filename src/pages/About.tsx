@@ -1,4 +1,4 @@
-import { MyCarousel } from "../components/MyCarousel"
+
 
 function About() {
     return (
