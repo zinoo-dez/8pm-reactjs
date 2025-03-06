@@ -1,7 +1,10 @@
+import { MyCarousel } from "../components/MyCarousel"
 
 function Contact() {
     return (
-        <div>Contact</div>
+        <div>
+            {/* <MyCarousel /> */}
+        </div>
     )
 }
 

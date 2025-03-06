@@ -5,13 +5,14 @@ import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
 import Post from "./pages/Post"
 import PostDetails from "./pages/PostDetails"
+import { Nav } from "./components/Nav"
 
 function App() {
   return (
     <div className=''>
       <Routes>
-        <Route path="/" element={<Navbar />} >
-          <Route path="/home" element={<Home />} />
+        <Route element={<Nav />} >
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/post" element={<Post />} />
