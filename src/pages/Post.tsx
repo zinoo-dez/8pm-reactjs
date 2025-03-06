@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
+interface Post {
+    id: number;
+    title: string;
+    body: string;
+}
 
 function Post() {
     const [loading, setLoading] = useState(false)
-    const [posts, setPosts] = useState()
+    const [posts, setPosts] = useState<Post[]>([])
     console.log('posts', posts)
     const fetchPost = async () => {
         setLoading(true)
@@ -25,7 +30,7 @@ function Post() {
             <div className="p-5">
                 <h3>All Posts</h3>
                 <div className="md:grid grid-cols-3 gap-5 shadow-xl bg-slate-200">
-                    {posts && posts.slice(0, 30).map((post: any) => (
+                    {posts && posts.slice(0, 30).map((post: any): any => (
                         <div key={post.id} className="p-4 bg-white shadow rounded-md">
                             <h2 className="text-2xl font-bold">{post.title}</h2>
                             <p>{post.body}</p>
